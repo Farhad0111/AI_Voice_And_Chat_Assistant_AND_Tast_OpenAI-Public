@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AI Customer Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 12px;
+            background: linear-gradient(145deg, #0d1117, #161b22);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            color: var(--text-color);
+        }
+
+        .login-container h1 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            background-color: #1c2128;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.2);
+        }
+
+        .photo-upload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .photo-preview {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #1c2128;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 2px solid var(--border-color);
+        }
+
+        .photo-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-preview i {
+            font-size: 2.5rem;
+            color: var(--gray-color);
+        }
+
+        .custom-file-upload {
+            cursor: pointer;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .custom-file-upload:hover {
+            background-color: var(--hover-color);
+        }
+
+        #photo-upload {
+            display: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .login-btn:hover {
+            background-color: var(--hover-color);
+        }
+
+        .error-message {
+            color: #ff6b6b;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <h1>Login to AI Customer Support</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="user-id">User ID</label>
+                    <input type="text" id="user-id" name="userId" required placeholder="Enter your user ID">
+                </div>                <div class="photo-upload">
+                    <div class="photo-preview" id="photo-preview">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo-url">Profile Photo URL</label>
+                        <input type="url" id="photo-url" name="photoUrl" placeholder="Enter image URL (e.g., https://example.com/photo.jpg)">
+                    </div>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+                <div id="error-message" class="error-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script>        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('login-form');
+            const photoUrlInput = document.getElementById('photo-url');
+            const photoPreview = document.getElementById('photo-preview');
+            const errorMessage = document.getElementById('error-message');
+              // Handle photo URL preview
+            photoUrlInput.addEventListener('input', function(event) {
+                const imageUrl = event.target.value.trim();
+                if (imageUrl) {
+                    // Show preview of the URL
+                    photoPreview.innerHTML = `<img src="${imageUrl}" alt="User Photo" onerror="this.onerror=null;this.parentNode.innerHTML='<i class=\\'fas fa-exclamation-circle\\'></i><small>Invalid image</small>';">`;
+                } else {
+                    photoPreview.innerHTML = `<i class="fas fa-user"></i>`;
+                }
+            });
+            
+            // Also trigger on initial load if URL is already filled
+            if (photoUrlInput.value.trim()) {
+                photoPreview.innerHTML = `<img src="${photoUrlInput.value.trim()}" alt="User Photo" onerror="this.onerror=null;this.parentNode.innerHTML='<i class=\\'fas fa-exclamation-circle\\'></i><small>Invalid image</small>';">`;
+            }
+            
+            // Handle login form submission
+            loginForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                const nameInput = document.getElementById('name');
+                const userIdInput = document.getElementById('user-id');
+                
+                // Basic validation
+                if (!nameInput.value.trim() || !userIdInput.value.trim()) {
+                    errorMessage.textContent = "Please fill in all required fields";
+                    return;
+                }
+                
+                // Store user data in localStorage
+                const userData = {
+                    name: nameInput.value.trim(),
+                    userId: userIdInput.value.trim()
+                };
+                
+                // If there's a photo URL, add it to userData
+                if (photoUrlInput.value.trim()) {
+                    userData.photo = photoUrlInput.value.trim();
+                }
+                
+                // Store user data and redirect
+                localStorage.setItem('userData', JSON.stringify(userData));
+                // Redirect to chat page
+                window.location.href = '/';
+            });
+        });
+    </script>
+</body>
+</html>

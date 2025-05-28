@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="status-indicator">
+            <span class="status-dot offline"></span> Connecting...
+        </div>
+        <header>
+            <h1>DONNA</h1>
+        </header>
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message assistant">
+                    <div class="avatar">
+                        <img src="/static/images/chatbot.png" alt="AI Assistant" class="avatar-img">
+                    </div>
+                    <div class="message-content">
+                        <p id="welcome-message">Hello! I'm your AI customer support assistant. How may I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                    <button type="submit" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <button type="button" id="voice-btn" class="voice-btn">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                </form>
+                <div id="voice-status" class="voice-status">Click the microphone to speak</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Check if user is logged in
+        document.addEventListener('DOMContentLoaded', () => {
+            const userData = JSON.parse(localStorage.getItem('userData'));
+            
+            // If user is not logged in, redirect to login page
+            if (!userData) {
+                window.location.href = '/login';
+            } else {
+                // Update welcome message with user's name
+                const welcomeMessage = document.getElementById('welcome-message');
+                if (welcomeMessage) {
+                    welcomeMessage.textContent = `Hi ${userData.name}, what task do you want to track?`;
+                }
+                
+                // Make sure there's a user message visible for avatar display
+                if (!document.querySelector('.message.user')) {
+                    const userMessageDiv = document.createElement('div');
+                    userMessageDiv.className = 'message user';
+                    
+                    const avatarDiv = document.createElement('div');
+                    avatarDiv.className = 'avatar';
+                    
+                    if (userData.photo) {
+                        avatarDiv.innerHTML = `<img src="${userData.photo}" alt="User" class="avatar-img" onerror="this.onerror=null;this.src='/static/images/user1.png';">`;
+                    } else {
+                        avatarDiv.innerHTML = `<i class="fas fa-user"></i>`;
+                    }
+                    
+                    userMessageDiv.appendChild(avatarDiv);
+                    userMessageDiv.style.display = 'none'; // Hide it initially, just for setup
+                    document.getElementById('chat-messages').appendChild(userMessageDiv);
+                }
+            }
+        });
+    </script>
+    <script src="/static/js/chat.js"></script>
+    <script src="/static/js/voice.js"></script>
+    <script>
+        // Additional script to make sure user avatar is visible when sending first message
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatForm = document.getElementById('chat-form');
+            
+            // When submitting the first message, make sure the hidden user element is removed
+            chatForm.addEventListener('submit', function(event) {
+                const hiddenUserElements = document.querySelectorAll('.message.user[style*="display: none"]');
+                hiddenUserElements.forEach(el => el.remove());
+            }, {once: true});  // Only trigger this once for the first message
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+{
+  "user_001": [
+    {
+      "title": "Complete the monthly financial report",
+      "description": "Prepare and submit the financial report for the current month",
+      "due_date": "2025-04-28",
+      "priority": "high",
+      "frequency": "monthly",
+      "status": "pending"
+    },
+    {
+      "title": "Attend project kickoff meeting",
+      "description": "Initial meeting for the new project phase",
+      "due_date": "2025-04-30",
+      "priority": "medium",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Fix login bug in authentication module",
+      "description": "Debug and resolve the authentication issue reported by users",
+      "due_date": "2025-05-02",
+      "priority": "high",
+      "frequency": "one-time",
+      "status": "in progress"
+    },
+    {
+      "title": "Update resume for internal job posting",
+      "description": "Revise and update resume for potential job opportunity within the company",
+      "due_date": "2025-05-05",
+      "priority": "medium",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Review pull requests from the dev team",
+      "description": "Evaluate and provide feedback on pull requests submitted by the development team",
+      "due_date": "2025-05-07",
+      "priority": "medium",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Prepare presentation for stakeholder review",
+      "description": "Create and finalize presentation materials for the upcoming stakeholder review meeting",
+      "due_date": "2025-05-10",
+      "priority": "high",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Conduct performance testing on new release",
+      "description": "Execute performance tests on the latest software release and analyze results",
+      "due_date": "2025-05-12",
+      "priority": "high",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Write unit tests for user profile module",
+      "description": "Develop and implement unit tests for the user profile module to ensure functionality",
+      "due_date": "2025-05-15",
+      "priority": "medium",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Plan sprint tasks for next iteration",
+      "description": "Outline and prioritize tasks for the upcoming sprint cycle",
+      "due_date": "2025-05-19",
+      "priority": "medium",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Draft email newsletter for users",
+      "description": "Create a draft for the monthly email newsletter to be sent to users",
+      "due_date": "2025-05-24",
+      "priority": "low",
+      "frequency": "one-time",
+      "status": "pending"
+    },
+    {
+      "title": "Daily code review",
+      "description": "Review team's code submissions and provide feedback",
+      "due_date": "2025-05-28",
+      "priority": "medium",
+      "frequency": "daily",
+      "status": "pending"
+    },
+    {
+      "title": "Update documentation",
+      "description": "Keep project documentation up to date",
+      "due_date": "2025-05-28",
+      "priority": "low",
+      "frequency": "daily",
+      "status": "pending"
+    },
+    {
+      "title": "Team status update",
+      "description": "Daily team sync meeting",
+      "due_date": "2025-05-28",
+      "priority": "medium",
+      "frequency": "daily",
+      "status": "pending"
+    },
+    {
+      "title": "Monthly security audit",
+      "description": "Perform security checks and updates",
+      "due_date": "2025-05-31",
+      "priority": "high",
+      "frequency": "monthly",
+      "status": "pending"
+    },
+    {
+      "title": "Weekly progress report",
+      "description": "Submit progress report to team lead",
+      "due_date": "2025-05-31",
+      "priority": "medium",
+      "frequency": "weekly",
+      "status": "pending"
+    }
+  ]
+}
