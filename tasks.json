@@ -1,124 +1,996 @@
 {
-  "user_001": [
-    {
-      "title": "Complete the monthly financial report",
-      "description": "Prepare and submit the financial report for the current month",
-      "due_date": "2025-04-28",
-      "priority": "high",
-      "frequency": "monthly",
-      "status": "pending"
-    },
-    {
-      "title": "Attend project kickoff meeting",
-      "description": "Initial meeting for the new project phase",
-      "due_date": "2025-04-30",
-      "priority": "medium",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Fix login bug in authentication module",
-      "description": "Debug and resolve the authentication issue reported by users",
-      "due_date": "2025-05-02",
-      "priority": "high",
-      "frequency": "one-time",
-      "status": "in progress"
-    },
-    {
-      "title": "Update resume for internal job posting",
-      "description": "Revise and update resume for potential job opportunity within the company",
-      "due_date": "2025-05-05",
-      "priority": "medium",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Review pull requests from the dev team",
-      "description": "Evaluate and provide feedback on pull requests submitted by the development team",
-      "due_date": "2025-05-07",
-      "priority": "medium",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Prepare presentation for stakeholder review",
-      "description": "Create and finalize presentation materials for the upcoming stakeholder review meeting",
-      "due_date": "2025-05-10",
-      "priority": "high",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Conduct performance testing on new release",
-      "description": "Execute performance tests on the latest software release and analyze results",
-      "due_date": "2025-05-12",
-      "priority": "high",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Write unit tests for user profile module",
-      "description": "Develop and implement unit tests for the user profile module to ensure functionality",
-      "due_date": "2025-05-15",
-      "priority": "medium",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Plan sprint tasks for next iteration",
-      "description": "Outline and prioritize tasks for the upcoming sprint cycle",
-      "due_date": "2025-05-19",
-      "priority": "medium",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Draft email newsletter for users",
-      "description": "Create a draft for the monthly email newsletter to be sent to users",
-      "due_date": "2025-05-24",
-      "priority": "low",
-      "frequency": "one-time",
-      "status": "pending"
-    },
-    {
-      "title": "Daily code review",
-      "description": "Review team's code submissions and provide feedback",
-      "due_date": "2025-05-28",
-      "priority": "medium",
-      "frequency": "daily",
-      "status": "pending"
-    },
-    {
-      "title": "Update documentation",
-      "description": "Keep project documentation up to date",
-      "due_date": "2025-05-28",
-      "priority": "low",
-      "frequency": "daily",
-      "status": "pending"
-    },
-    {
-      "title": "Team status update",
-      "description": "Daily team sync meeting",
-      "due_date": "2025-05-28",
-      "priority": "medium",
-      "frequency": "daily",
-      "status": "pending"
-    },
-    {
-      "title": "Monthly security audit",
-      "description": "Perform security checks and updates",
-      "due_date": "2025-05-31",
-      "priority": "high",
-      "frequency": "monthly",
-      "status": "pending"
-    },
-    {
-      "title": "Weekly progress report",
-      "description": "Submit progress report to team lead",
-      "due_date": "2025-05-31",
-      "priority": "medium",
-      "frequency": "weekly",
-      "status": "pending"
-    }
-  ]
+    "user_001": [
+        {
+            "title": "Complete the monthly financial report",
+            "description": "Prepare and submit the financial report for the current month",
+            "due_date": "2025-04-28",
+            "priority": "high",
+            "frequency": "monthly",
+            "status": "pending"
+        },
+        {
+            "title": "Attend project kickoff meeting",
+            "description": "Initial meeting for the new project phase",
+            "due_date": "2025-04-30",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Improve code quality",
+            "due_date": "2025-04-01",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Check logs and errors",
+            "due_date": "2025-04-02",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Review and update documentation",
+            "due_date": "2025-04-03",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Improve code quality",
+            "due_date": "2025-04-04",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Debug and fix issues",
+            "due_date": "2025-04-05",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-06",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-04-07",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-08",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Debug and fix issues",
+            "due_date": "2025-04-09",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-04-10",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Respond to user queries",
+            "due_date": "2025-04-11",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Check logs and errors",
+            "due_date": "2025-04-12",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-13",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-14",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Review and update documentation",
+            "due_date": "2025-04-15",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Improve code quality",
+            "due_date": "2025-04-16",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-17",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Respond to user queries",
+            "due_date": "2025-04-18",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Debug and fix issues",
+            "due_date": "2025-04-19",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-04-20",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Work on assigned task",
+            "due_date": "2025-04-21",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Respond to user queries",
+            "due_date": "2025-04-22",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-23",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Check logs and errors",
+            "due_date": "2025-04-24",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Review and update documentation",
+            "due_date": "2025-04-25",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Check logs and errors",
+            "due_date": "2025-04-26",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Review and update documentation",
+            "due_date": "2025-04-27",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-04-28",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Run performance analysis",
+            "due_date": "2025-04-29",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Review and update documentation",
+            "due_date": "2025-04-30",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-01",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-02",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-03",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-04",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Respond to user queries",
+            "due_date": "2025-05-05",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Plan upcoming features",
+            "due_date": "2025-05-06",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Plan upcoming features",
+            "due_date": "2025-05-07",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Respond to user queries",
+            "due_date": "2025-05-08",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Respond to user queries",
+            "due_date": "2025-05-09",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-10",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Check logs and errors",
+            "due_date": "2025-05-11",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Run performance analysis",
+            "due_date": "2025-05-12",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Plan upcoming features",
+            "due_date": "2025-05-13",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Plan upcoming features",
+            "due_date": "2025-05-14",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-15",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Work on assigned task",
+            "due_date": "2025-05-16",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-17",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Debug and fix issues",
+            "due_date": "2025-05-18",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-19",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-20",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Respond to user queries",
+            "due_date": "2025-05-21",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-22",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-23",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Work on assigned task",
+            "due_date": "2025-05-24",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Respond to user queries",
+            "due_date": "2025-05-25",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Debug and fix issues",
+            "due_date": "2025-05-26",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Review and update documentation",
+            "due_date": "2025-05-27",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Check logs and errors",
+            "due_date": "2025-05-28",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-05-29",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Check logs and errors",
+            "due_date": "2025-05-30",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Plan upcoming features",
+            "due_date": "2025-05-31",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Respond to user queries",
+            "due_date": "2025-06-01",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-06-02",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Run performance analysis",
+            "due_date": "2025-06-03",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-06-04",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Respond to user queries",
+            "due_date": "2025-06-05",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Check logs and errors",
+            "due_date": "2025-06-06",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Work on assigned task",
+            "due_date": "2025-06-07",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Work on assigned task",
+            "due_date": "2025-06-08",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Plan upcoming features",
+            "due_date": "2025-06-09",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-06-10",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Plan upcoming features",
+            "due_date": "2025-06-11",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Check logs and errors",
+            "due_date": "2025-06-12",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Work on assigned task",
+            "due_date": "2025-06-13",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-06-14",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Run performance analysis",
+            "due_date": "2025-06-15",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Plan upcoming features",
+            "due_date": "2025-06-16",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-06-17",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-06-18",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Respond to user queries",
+            "due_date": "2025-06-19",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Debug and fix issues",
+            "due_date": "2025-06-20",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Plan upcoming features",
+            "due_date": "2025-06-21",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Respond to user queries",
+            "due_date": "2025-06-22",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Improve code quality",
+            "due_date": "2025-06-23",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Work on assigned task",
+            "due_date": "2025-06-24",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Plan upcoming features",
+            "due_date": "2025-06-25",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Debug and fix issues",
+            "due_date": "2025-06-26",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Review and update documentation",
+            "due_date": "2025-06-27",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Improve code quality",
+            "due_date": "2025-06-28",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-06-29",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Work on assigned task",
+            "due_date": "2025-06-30",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-07-01",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Run performance analysis",
+            "due_date": "2025-07-02",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Respond to user queries",
+            "due_date": "2025-07-03",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Check logs and errors",
+            "due_date": "2025-07-04",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-07-05",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-07-06",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Run performance analysis",
+            "due_date": "2025-07-07",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Prepare training session",
+            "description": "Improve code quality",
+            "due_date": "2025-07-08",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-07-09",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Respond to user queries",
+            "due_date": "2025-07-10",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-07-11",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Improve code quality",
+            "due_date": "2025-07-12",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Respond to user queries",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-07-13",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Improve code quality",
+            "due_date": "2025-07-14",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Attend scheduled meeting",
+            "due_date": "2025-07-15",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Team standup meeting",
+            "description": "Respond to user queries",
+            "due_date": "2025-07-16",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Review and update documentation",
+            "due_date": "2025-07-17",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Review and update documentation",
+            "due_date": "2025-07-18",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Respond to user queries",
+            "due_date": "2025-07-19",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Respond to user queries",
+            "due_date": "2025-07-20",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Work on assigned task",
+            "due_date": "2025-07-21",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "in progress"
+        },
+        {
+            "title": "Fix minor bugs",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-22",
+            "priority": "high",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Run performance analysis",
+            "due_date": "2025-07-23",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "in progress"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Work on assigned task",
+            "due_date": "2025-07-24",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Refactor old code",
+            "description": "Improve code quality",
+            "due_date": "2025-07-25",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-26",
+            "priority": "medium",
+            "frequency": "one-time",
+            "status": "completed"
+        },
+        {
+            "title": "Analyze performance metrics",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-27",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Debug and fix issues",
+            "due_date": "2025-07-28",
+            "priority": "high",
+            "frequency": "one-time",
+            "status": "pending"
+        },
+        {
+            "title": "Check server logs",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-29",
+            "priority": "medium",
+            "frequency": "daily",
+            "status": "completed"
+        },
+        {
+            "title": "Design review meeting",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-30",
+            "priority": "low",
+            "frequency": "daily",
+            "status": "pending"
+        },
+        {
+            "title": "Update daily report",
+            "description": "Plan upcoming features",
+            "due_date": "2025-07-31",
+            "priority": "low",
+            "frequency": "one-time",
+            "status": "completed"
+        }
+    ]
 }

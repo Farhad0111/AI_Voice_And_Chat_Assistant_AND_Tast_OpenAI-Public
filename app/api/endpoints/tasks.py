@@ -54,3 +54,75 @@ async def delete_task(user_id: str, task_title: str) -> Dict:
     if not success:
         raise HTTPException(status_code=404, detail="Task not found")
     return {"status": "success", "message": "Task deleted successfully"}
+
+@router.get("/date/{user_id}")
+async def get_tasks_for_flexible_date(user_id: str, date_input: str) -> List[Dict]:
+    """
+    Get tasks for a flexible date input
+    Examples: 'today', 'tomorrow', 'next week', 'April 1, 2025', '2025-04-01'
+    """
+    tasks = task_service.get_tasks_for_flexible_date(user_id, date_input)
+    return tasks
+
+@router.get("/range/{user_id}")
+async def get_tasks_for_date_range(user_id: str, date_range: str) -> List[Dict]:
+    """
+    Get tasks for a flexible date range
+    Examples: 'this week', 'next 7 days', 'this month', 'next month'
+    """
+    tasks = task_service.get_tasks_for_date_range(user_id, date_range)
+    return tasks
+
+@router.post("/flexible/{user_id}")
+async def create_task_with_flexible_date(user_id: str, task_data: Dict) -> Dict:
+    """
+    Create a task with flexible date parsing
+    Required: title, Optional: description, date_input, priority, frequency, status
+    date_input examples: 'tomorrow', 'next week', 'April 1, 2025', 'end of month'
+    """
+    title = task_data.get("title")
+    if not title:
+        raise HTTPException(status_code=400, detail="Title is required")
+    
+    description = task_data.get("description", "")
+    date_input = task_data.get("date_input", "today")
+    priority = task_data.get("priority", "medium")
+    frequency = task_data.get("frequency", "one-time")
+    status = task_data.get("status", "pending")
+    
+    success = task_service.create_task_with_flexible_date(
+        user_id, title, description, date_input, priority, frequency, status
+    )
+    
+    if not success:
+        raise HTTPException(status_code=400, detail="Failed to create task")
+    
+    # Return the parsed date for confirmation
+    parsed_info = task_service.parse_and_validate_date(date_input)
+    return {
+        "status": "success", 
+        "message": "Task created successfully",
+        "date_info": parsed_info
+    }
+
+@router.get("/query/{user_id}")
+async def get_tasks_by_flexible_query(user_id: str, query: str) -> List[Dict]:
+    """
+    Advanced task query with flexible date and filter options
+    Examples: 
+    - 'tasks for tomorrow'
+    - 'high priority tasks this week'
+    - 'completed tasks this month'
+    - 'daily tasks next week'
+    """
+    tasks = task_service.get_tasks_by_flexible_query(user_id, query)
+    return tasks
+
+@router.get("/validate-date")
+async def validate_date_input(date_input: str) -> Dict:
+    """
+    Validate and parse a flexible date input
+    Returns the parsed date and original input for confirmation
+    """
+    parsed_info = task_service.parse_and_validate_date(date_input)
+    return parsed_info
