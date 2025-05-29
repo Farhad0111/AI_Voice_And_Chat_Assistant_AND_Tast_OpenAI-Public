@@ -85,3 +85,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ##### show my 31/05/2025 schdule?
 ##### show my 05/31/2025 schdule?
 ##### show my 06/31/2025 schdule?
+##### show my May 29, 2025 schdule
