@@ -78,11 +78,11 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 
-##### show my today schdule?
+##### show my today schedule?
 ##### Can you help me organize my schedule for the week?
-##### show my next day schdule?
-##### show my next 2 day schdule?
-##### show my 31/05/2025 schdule?
-##### show my 05/31/2025 schdule?
-##### show my 06/31/2025 schdule?
-##### show my May 29, 2025 schdule
+##### show my next day schedule?
+##### show my next 2 day schedule?
+##### show my 31/05/2025 schedule?
+##### show my 05/31/2025 schedule?
+##### show my 06/31/2025 schedule?
+##### show my May 29, 2025 schedule?
