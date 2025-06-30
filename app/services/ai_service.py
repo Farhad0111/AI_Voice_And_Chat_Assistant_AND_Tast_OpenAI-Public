@@ -614,6 +614,8 @@ When discussing tasks, always specify their priority and due date. Be helpful, f
         
         # Patterns for flexible date queries
         date_patterns = [
+            # Today patterns
+            (r'today', 'today'),
             # Tomorrow patterns
             (r'tomorrow|next day', 'tomorrow'),
             # Next X days patterns
@@ -631,7 +633,11 @@ When discussing tasks, always specify their priority and due date. Be helpful, f
             match = re.search(pattern, input_lower)
             if match:
                 try:
-                    if 'next' in pattern and 'days' in pattern:
+                    if 'today' in pattern:
+                        # Handle today - use the proper today schedule response
+                        return self._get_today_schedule_response()
+                    
+                    elif 'next' in pattern and 'days' in pattern:
                         # Handle "next X days"
                         days = int(match.group(1))
                         date_input = f"next {days} days"
